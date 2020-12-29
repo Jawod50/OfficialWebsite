@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" type="image/png" href="../images/logos/iconBanana.png" />
+		<link rel="stylesheet" type="text/css" href="../css/scroll.css" />
+		<link rel="stylesheet" type="text/css" href="../css/navigation.css" />
+		<link rel="stylesheet" type="text/css" href="../css/chatapz.css" />
+		<link rel="stylesheet" type="text/css" href="../css/carousel.css" />
+		<title>Official Website</title>
+	</head>
+	<body>
+		<div id="navbar-container"></div>
+
+		<!-- <slide-show-manual
+			title="CHATAPZ"
+			description="A place where you can come and hangout with your friends without worrying about your privacy. Chat or video-call your friends at your convenience at chatapz.heorkuapp.com."
+			numberOfSlides="5"
+			slideWidth="1000"
+			slideHeight="515"
+			bgColor="65"
+			slide01="../images/chatapz/Chatapz01.png"
+			slide02="../images/chatapz/Chatapz02.png"
+			slide03="../images/chatapz/Chatapz03.png"
+			slide04="../images/chatapz/Chatapz04.png"
+			slide05="../images/chatapz/Chatapz05.png"
+			nextIcon="../images/logos/next.png"
+			previousIcon="../images/logos/previous.png"
+		></slide-show-manual> -->
+		<div class="carousel-container width-1000 border-light-carousel">
+			<div class="carousel-slides">
+				<div class="carousel-slide">
+					<img src="../images/chatapz/Chatapz01.png" alt="Image 1" />
+				</div>
+				<div class="carousel-slide">
+					<img src="../images/chatapz/Chatapz02.png" alt="Image 1" />
+				</div>
+				<div class="carousel-slide">
+					<img src="../images/chatapz/Chatapz03.png" alt="Image 1" />
+				</div>
+				<div class="carousel-slide">
+					<img src="../images/chatapz/Chatapz04.png" alt="Image 1" />
+				</div>
+				<div class="carousel-slide">
+					<img src="../images/chatapz/Chatapz05.png" alt="Image 1" />
+				</div>
+
+				<!-- Dynamic images will be inserted here -->
+			</div>
+
+			<div class="carousel-dots">
+				<!-- Dynamic navigation dots will be inserted here -->
+			</div>
+
+			<div class="carousel-button prev-button no-select" onclick="prevSlide()">
+				<img src="../images/logos/previous.png" alt="" srcset="" />
+			</div>
+			<div class="carousel-button next-button no-select" onclick="nextSlide()">
+				<img src="../images/logos/next.png" alt="" srcset="" />
+			</div>
+		</div>
+		<div class="center-details width-1000 border-light-detials">
+			<div class="detail-container">
+				<h1 class="title">CHATAPZ</h1>
+				<p class="description">
+					A place where you can come and hangout with your friends without worrying about your privacy. Chat or
+					video-call your friends at your convenience at chatapz.herokuapp.com
+				</p>
+			</div>
+		</div>
+		<div id="footer-container"></div>
+
+		<script src="../scripts/carouselScript.js"></script>
+		<script src="../scripts/navbarRender.js"></script>
+		<script src="../scripts/footerRender.js"></script>
+	</body>
+</html>

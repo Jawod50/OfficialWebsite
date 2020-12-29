@@ -1,0 +1,74 @@
+* {	margin: 0px;
+	padding: 0px;
+}
+body {
+	background: url(../images/logos/Logo-Small.png);
+	overflow-x: hidden;
+}
+
+/* PL Section */
+.pl-section {
+	text-align: center;
+	padding-top: 50px;
+	margin-bottom: -75px;
+}
+
+.pl-section img {
+	margin: 10px 25px;
+}
+/* PL Section */
+
+/* WD-section */
+.WD-section {
+	margin: 150px;
+	padding: 10px;
+	background-color: black;
+}
+.WD-title {
+	text-align: center;
+	background-color: rgba(0, 128, 128);
+	color: whitesmoke;
+	margin-bottom: 10px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+.WD-body {
+	text-align: center;
+	background-color: rgba(0, 128, 128, 0.5);
+	padding: 50px 0px;
+}
+
+.WD-body img {
+	/* margin: 10px 25px; */
+	margin: 10px 10px;
+}
+/* WD-section */
+
+/* Footer */
+.footer img {
+	margin: 0pc 5px 15px 5px;
+}
+.footer {
+	background-color: rgb(50, 50, 50);
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	padding: 60px 0px 70px 0px;
+	/* width: 100vw; */
+}
+/* Footer */
+
+@media (max-width: 630px) /* Section */ {
+	.WD-section {
+		margin: 150px 0%;
+		padding: 2px;
+	}
+	.WD-title {
+		margin-bottom: 2px;
+	}
+
+	.WD-body img {
+		margin: 10px 0px;
+	}
+}

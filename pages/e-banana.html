@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="shortcut icon" type="image/png" href="../images/logos/iconBanana.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="../css/scroll.css" />
+		<link rel="stylesheet" type="text/css" href="../css/carousel.css" />
+		<link rel="stylesheet" type="text/css" href="../css/navigation.css" />
+		<link rel="stylesheet" type="text/css" href="../css/e-banana.css" />
+		<title>Official Website</title>
+	</head>
+	<body>
+		<div id="navbar-container"></div>
+
+		<!-- <slide-show-manual
+			title="E-BANANA"
+			description="This device is specifically created for emergency situation. It has a GPS for tracking location and a GSM for contacting the authorities. It would ease the process of seeking help and sending rescue by just 2 clicks."
+			numberOfSlides="6"
+			slideWidth="800"
+			slideHeight="600"
+			bgColor="65"
+			slide01="../images/e-banana/EBanana01-Medium.png"
+			slide02="../images/e-banana/EBanana02-Medium.png"
+			slide03="../images/e-banana/EBanana03-Medium.png"
+			slide04="../images/e-banana/EBanana04-Medium.png"
+			slide05="../images/e-banana/EBanana05-Medium.png"
+			slide06="../images/e-banana/EBanana06-Medium.png"
+			nextIcon="../images/logos/next.png"
+			previousIcon="../images/logos/previous.png"
+		></slide-show-manual> -->
+
+		<div class="carousel-container width-800 border-light-carousel">
+			<div class="carousel-slides">
+				<div class="carousel-slide">
+					<img src="../images/e-banana/EBanana01-Medium.png" alt="Image 1" />
+				</div>
+				<div class="carousel-slide">
+					<img src="../images/e-banana/EBanana02-Medium.png" alt="Image 1" />
+				</div>
+				<div class="carousel-slide">
+					<img src="../images/e-banana/EBanana03-Medium.png" alt="Image 1" />
+				</div>
+				<div class="carousel-slide">
+					<img src="../images/e-banana/EBanana04-Medium.png" alt="Image 1" />
+				</div>
+				<div class="carousel-slide">
+					<img src="../images/e-banana/EBanana05-Medium.png" alt="Image 1" />
+				</div>
+				<div class="carousel-slide">
+					<img src="../images/e-banana/EBanana06-Medium.png" alt="Image 1" />
+				</div>
+				<!-- Dynamic images will be inserted here -->
+			</div>
+
+			<div class="carousel-dots">
+				<!-- Dynamic navigation dots will be inserted here -->
+			</div>
+
+			<div class="carousel-button prev-button no-select" onclick="prevSlide()">
+				<img src="../images/logos/previous.png" alt="" srcset="" />
+			</div>
+			<div class="carousel-button next-button no-select" onclick="nextSlide()">
+				<img src="../images/logos/next.png" alt="" srcset="" />
+			</div>
+		</div>
+		<div class="center-details width-800 border-light-detials">
+			<div class="detail-container">
+				<h1 class="title">E-BANANA</h1>
+				<p class="description">
+					This device is specifically created for emergency situation. It has a GPS for tracking location and a GSM for
+					contacting the authorities. It would ease the process of seeking help and sending rescue by just 2 clicks.
+				</p>
+			</div>
+		</div>
+		<div id="footer-container"></div>
+
+		<script src="../scripts/carouselScript.js"></script>
+		<script src="../scripts/navbarRender.js"></script>
+		<script src="../scripts/footerRender.js"></script>
+	</body>
+</html>
