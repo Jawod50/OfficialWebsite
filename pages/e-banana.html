@@ -32,39 +32,22 @@
 		</div>
 	</div>
 	
-	<div class="content-container">
-		<div class="slideshow">
-			<div class="slides"> 
-				<input type="radio" name="r" id="r1" checked>
-				<input type="radio" name="r" id="r2">
-				<input type="radio" name="r" id="r3">
-				<input type="radio" name="r" id="r4">
-				<input type="radio" name="r" id="r5">
-				<input type="radio" name="r" id="r6">
-
-				<div class="slide s1"> <img src="../images/e-banana/EBanana01-Medium.png" alt=""> </div> 
-				<div class="slide"> <img src="../images/e-banana/EBanana02-Medium.png" alt=""> </div>
-				<div class="slide"> <img src="../images/e-banana/EBanana03-Medium.png" alt=""> </div>
-				<div class="slide"> <img src="../images/e-banana/EBanana04-Medium.png" alt=""> </div>
-				<div class="slide"> <img src="../images/e-banana/EBanana05-Medium.png" alt=""> </div>
-				<div class="slide"> <img src="../images/e-banana/EBanana06-Medium.png" alt=""> </div>
-			</div>
-		</div>
-	
- 		<div class="slider-option">
- 			<label for="r1" class="slider-bar"></label>
- 			<label for="r2" class="slider-bar"></label>
- 			<label for="r3" class="slider-bar"></label>
- 			<label for="r4" class="slider-bar"></label>
- 			<label for="r5" class="slider-bar"></label>
-			<label for="r6" class="slider-bar"></label>
-		</div>
-
-		<div class="detail-container">
-			<h1 class="title">E-BANANA</h1>
-			<p class="description">Somewhere out there, some people are continuously screaming for help but cannot be heard nor seen. This device is specifically created for emergency situation; it has a GPS for location and a GSM for contacting the authorities. It would ease the process of seeking help and sending rescue by just 2 clicks.</p>
-		</div>
-	</div>
+	<slide-show-manual
+		title="E-BANANA"
+		description="Somewhere out there, some people are continuously screaming for help but cannot be heard nor seen. This device is specifically created for emergency situation; it has a GPS for location and a GSM for contacting the authorities. It would ease the process of seeking help and sending rescue by just 2 clicks."
+		numberOfSlides="6"
+		slideWidth="800"
+		slideHeight="600"
+		bgColor="65"
+		slide01="../images/e-banana/EBanana01-Medium.png"
+		slide02="../images/e-banana/EBanana02-Medium.png"
+		slide03="../images/e-banana/EBanana03-Medium.png"
+		slide04="../images/e-banana/EBanana04-Medium.png"
+		slide05="../images/e-banana/EBanana05-Medium.png"
+		slide06="../images/e-banana/EBanana06-Medium.png"
+		nextIcon="../images/logos/next.png"
+		previousIcon="../images/logos/previous.png"
+	></slide-show-manual>
 
 	<div class="footer">
 		<a href="https://www.facebook.com/" target="new"><img src="../images/logos/SM_Facebook.png" alt="Facebook"></a>
@@ -73,5 +56,6 @@
 		<a href="https://linkedin.com/" target="new"><img src="../images/logos/SM_Linkedin.png" alt="Linkedin"></a>
 		<p>Copyright © 2019-2020 Jude Russel Jawod</p>
 	</div>
+	<script src="../scripts/slideShowManual.js"></script>
 </body>
 </html>
