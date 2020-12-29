@@ -1,0 +1,263 @@
+/* Testing */
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+body
+{
+	background: url(../images/logos/Automation-Small.png);
+	overflow-x: hidden;
+}
+/* Navigation */
+.nav 
+{ 
+	position: fixed;
+	width: 100%;
+	background-color: black; 
+	z-index: 3;
+}
+.nav-container
+{
+	display: block;
+	background-color: black;
+	height: 60px;
+	width: 625px;
+	margin: auto; 
+}
+a { text-decoration: none; color: white; }
+a:hover { text-decoration: none; color: grey; }
+ul > li
+{
+	list-style: none;
+	float: left;
+	width: 125px;
+	height: 50px;
+	background-color: black;
+	opacity: .8;
+	line-height: 40px;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 14px;
+	padding-top: 10px;
+}
+ul li ul li { display: none; }
+ul li:hover ul li { display: block; }
+/* Navigation */
+
+
+/* Slider */
+.content h1
+{
+	text-align: center;
+	font-size: 75px;
+}
+.content p
+{ 
+	text-align: justify;
+	font-family: sans-serif;
+	font-size: 30px;
+	/* font-size: 20px; */
+}
+
+/* Robot01 */
+.robot01
+{
+	padding: 10px 10px;
+	display: grid;
+	grid-template-areas: 
+	'title01 title01'
+	'image01 description01';
+	grid-gap: 10px;
+	background-color: #414141; 
+	width: 1080px;
+	margin: 65px auto auto auto;
+	
+}
+.title01
+{ 
+	display: grid;
+	grid-area: title01; 
+	background-color:rgb(204, 188, 188);
+	/* background-color: #ff677d; */
+	/* margin: 0px 10px; */
+}
+.description01
+{ 
+	display: grid;
+	grid-area: description01; 
+	background-color: #fde5ce;
+	/* margin-right: 10px; */
+	padding: 50px;
+}
+.photo01
+{
+	display: grid;
+	grid-area: image01;
+	width: 700px;
+	height: 540px;
+}
+/* Robot01 */
+
+/* Robot02 */
+.robot02
+{
+	padding: 10px;
+	display: grid;
+	grid-template-areas: 
+	'title02 title02'
+	'image02 description02';
+	grid-gap: 10px;
+	background-color: #414141; 
+	width: 1080px;
+	margin: 100px auto auto auto;
+	
+}
+.title02
+{ 
+	display: grid;
+	grid-area: title02; 
+	background-color:rgb(204, 188, 188);
+}
+.description02
+{ 
+	display: grid;
+	grid-area: description02; 
+	background-color: #fde5ce;
+	padding: 50px;
+}
+.photo02
+{
+	display: grid;
+	grid-area: image02;
+	width: 700px;
+	height: 540px;
+}
+
+/* Robot02 */
+
+/* Robot03 */
+.robot03
+{
+	padding: 10px;
+	display: grid;
+	grid-template-areas: 
+	'title03 title03'
+	'image03 description03';
+	grid-gap: 10px;
+	background-color: #414141; 
+	width: 1080px;
+	margin: 100px auto auto auto;
+	
+}
+.title03
+{ 
+	display: grid;
+	grid-area: title03; 
+	background-color:rgb(204, 188, 188);
+}
+.description03
+{ 
+	display: grid;
+	grid-area: description03; 
+	background-color: #fde5ce;
+	padding: 50px;
+}
+.photo03
+{
+	display: grid;
+	grid-area: image03;
+	width: 700px;
+	height: 540px;
+}
+/* Robot03 */
+
+/* Robot04 */
+.robot04
+{
+	padding: 10px;
+	display: grid;
+	grid-template-areas: 
+	'title04 title04'
+	'image04 description04';
+	grid-gap: 10px;
+	background-color: #414141; 
+	width: 1080px;
+	margin: 100px auto;
+	
+}
+.title04
+{ 
+	display: grid;
+	grid-area: title04; 
+	background-color:rgb(204, 188, 188);
+}
+.description04
+{
+	display: grid;
+	grid-area: description04; 
+	background-color: #fde5ce;
+	padding: 50px;
+}
+.photo04
+{
+	display: grid;
+	grid-area: image04;
+	width: 700px;
+	height: 540px;
+}
+/* Robot04 */
+/* Slider */
+
+
+/* Footer */
+.footer img
+{
+	margin: 0pc 5px 15px 5px;
+}
+.footer
+{
+	background-color: rgb(50,50,50);
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	padding: 60px 0px 70px 0px;
+	/* width: 100vw; */
+}
+/* Footer */
+
+@media(max-width: 630px) /* Navigation  */
+{
+.nav 
+{ 
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+}
+.nav-container
+{
+	display: block;
+	background-color: black;
+	height: 60px;
+	width: 500px;
+	margin: auto; 
+}
+a { text-decoration: none; color: white; }
+a:hover { text-decoration: none; color: grey; }
+ul > li
+{
+	list-style: none;
+	float: left;
+	width: 95px;
+	height: 50px;
+	background-color: black;
+	opacity: .8;
+	line-height: 40px;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 14px;
+	padding-top: 10px;
+}
+ul li ul li { display: none; }
+ul li:hover ul li { display: block; }
+}

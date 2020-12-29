@@ -1,0 +1,130 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+body
+{
+	background: url(../images/logos/GameDev-Small.png);
+	overflow-x: hidden;
+}
+/* Navigation */
+.nav 
+{ 
+	position: fixed;
+	width: 100%;
+	background-color: black; 
+	z-index: 3;
+}
+.nav-container
+{
+	display: block;
+	background-color: black;
+	height: 60px;
+	width: 625px;
+	margin: auto; 
+}
+a { text-decoration: none; color: white; }
+a:hover { text-decoration: none; color: grey; }
+ul > li
+{
+	list-style: none;
+	float: left;
+	width: 125px;
+	height: 50px;
+	background-color: black;
+	opacity: .8;
+	line-height: 40px;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 14px;
+	padding-top: 10px;
+}
+ul li ul li { display: none; }
+ul li:hover ul li { display: block; }
+/* Navigation */
+
+/* Content */
+.content
+{
+	margin: 57px auto 100px auto;
+	padding: 10px 5px 10px 5px;
+	background-color: #414141;
+	width: 1010px;
+}
+.photo01
+{
+	padding-left: 5px;
+}
+.backgroundColor
+{
+	background-color: white;
+	width: 1000px;
+	margin: 10px auto 0px auto;
+	padding: 13px 0px;
+}
+.title
+{
+	font-family: sans-serif;
+	font-size: 25px;
+	margin: 0px 0px 0px 13px;
+}
+.description
+{
+	font-family: sans-serif;
+	font-size: 20px;
+	margin: 0px 0px 0px 13px;
+}
+/* Content */
+
+/* Footer */
+.footer img
+{
+	margin: 0pc 5px 15px 5px;
+}
+.footer
+{
+	background-color: rgb(50,50,50);
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	padding: 60px 0px 70px 0px;
+	/* width: 100vw; */
+}
+/* Footer */
+
+@media(max-width: 630px) /* Navigation  */
+{
+.nav 
+{ 
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+}
+.nav-container
+{
+	display: block;
+	background-color: black;
+	height: 60px;
+	width: 500px;
+	margin: auto; 
+}
+a { text-decoration: none; color: white; }
+a:hover { text-decoration: none; color: grey; }
+ul > li
+{
+	list-style: none;
+	float: left;
+	width: 95px;
+	height: 50px;
+	background-color: black;
+	opacity: .8;
+	line-height: 40px;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 14px;
+	padding-top: 10px;
+}
+ul li ul li { display: none; }
+ul li:hover ul li { display: block; }
+}

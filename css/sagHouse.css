@@ -1,0 +1,325 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+body
+{
+	background: url(../images/logos/GameDev-Small.png);
+	overflow-x: hidden;
+}
+/* Navigation */
+.nav 
+{ 
+	position: fixed;
+	width: 100%;
+	background-color: black; 
+	z-index: 3;
+}
+.nav-container
+{
+	display: block;
+	background-color: black;
+	height: 60px;
+	width: 625px;
+	margin: auto; 
+}
+a { text-decoration: none; color: white; }
+a:hover { text-decoration: none; color: grey; }
+ul > li
+{
+	list-style: none;
+	float: left;
+	width: 125px;
+	height: 50px;
+	background-color: black;
+	opacity: .8;
+	line-height: 40px;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 14px;
+	padding-top: 10px;
+}
+ul li ul li { display: none; }
+ul li:hover ul li { display: block; }
+/* Navigation */
+
+/* Slider */
+.content h1
+{
+	text-align: center;
+	font-size: 75px;
+}
+.content p
+{ 
+	text-align: justify;
+	font-family: sans-serif;
+	/* font-size: 30px; */
+}
+/* SlideShow01 */
+.slideShow01
+{
+	padding: 10px 0px;
+	display: grid;
+	grid-template-areas: 
+	'title01 title01'
+	'image01 description01';
+	grid-gap: 10px;
+	background-color: #414141; 
+	width: 1076px;
+	margin: 72px auto auto auto;	
+}
+.title01
+{ 
+	display: grid;
+	grid-area: title01; 
+	background-color: rgb(240, 133, 133);
+	margin: 0px 10px;
+}
+.description01
+{ 
+	display: grid;
+	grid-area: description01; 
+	background-color: rgb(240, 232, 158);
+	margin-right: 10px;
+	padding: 50px;
+	font-size: 26px;
+	/* font-size: 18px; */
+
+}
+.slider01
+{
+	display: grid;
+	grid-area: image01;
+	width: 700px;
+	height: 525px;
+	background: url(../images/sagHouse/sagHouse/SagHouse01-Medium.png);
+	animation: slide01 25s infinite;
+	background-color: lightslategray;
+	margin-left: 10px;
+}
+@keyframes slide01
+{
+	10% { background: url(../images/sagHouse/sagHouse/SagHouse02-Medium.png); }
+	20% { background: url(../images/sagHouse/sagHouse/SagHouse03-Medium.png); }
+	30% { background: url(../images/sagHouse/sagHouse/SagHouse04-Medium.png); }
+	40% { background: url(../images/sagHouse/sagHouse/SagHouse05-Medium.png); }
+	50% { background: url(../images/sagHouse/sagHouse/SagHouse06-Medium.png); }
+	60% { background: url(../images/sagHouse/sagHouse/SagHouse07-Medium.png); }
+	70% { background: url(../images/sagHouse/sagHouse/SagHouse08-Medium.png); }
+	80% { background: url(../images/sagHouse/sagHouse/SagHouse09-Medium.png); }
+	90% { background: url(../images/sagHouse/sagHouse/SagHouse10-Medium.png); }
+	100% { background: url(../images/sagHouse/sagHouse/SagHouse01-Medium.png); }
+}
+/* SlideShow01 */
+
+/* SlideShow02 */
+.slideShow02
+{
+	padding: 10px 0px;
+	display: grid;
+	grid-template-areas: 
+	'title02 title02'
+	'image02 description02';
+	grid-gap: 10px;
+	background-color: #414141; 
+	width: 1076px;
+	margin: 100px auto auto auto;
+	
+}
+.title02
+{ 
+	display: grid;
+	grid-area: title02; 
+	background-color: rgb(240, 133, 133);
+	margin: 0px 10px;
+}
+.description02
+{ 
+	display: grid;
+	grid-area: description02; 
+	background-color: rgb(240, 232, 158);
+	margin-right: 10px;
+	padding: 50px;
+	font-size: 30px;
+	/* font-size: 20px; */
+
+}
+.slider02
+{
+	display: grid;
+	grid-area: image02;
+	width: 700px;
+	height: 525px;
+	background: url(../images/sagHouse/cupDrop/CupDrop02-Medium.png);
+	animation: slide02 12.5s infinite;
+	background-color: lightslategray;
+	margin-left: 10px;
+}
+@keyframes slide02
+{
+	20% { background: url(../images/sagHouse/cupDrop/CupDrop03-Medium.png); }
+	40% { background: url(../images/sagHouse/cupDrop/CupDrop04-Medium.png); }
+	60% { background: url(../images/sagHouse/cupDrop/CupDrop05-Medium.png); }
+	80% { background: url(../images/sagHouse/cupDrop/CupDrop01-Medium.png); }
+	100% { background: url(../images/sagHouse/cupDrop/CupDrop02-Medium.png); }
+}
+/* SlideShow02 */
+
+/* SlideShow03 */
+.slideShow03
+{
+	padding: 10px 0px;
+	display: grid;
+	grid-template-areas: 
+	'title03 title03'
+	'image03 description03';
+	grid-gap: 10px;
+	background-color: #414141; 
+	width: 1076px;
+	margin: 100px auto auto auto;
+	
+}
+.title03
+{ 
+	display: grid;
+	grid-area: title03; 
+	background-color: rgb(240, 133, 133);
+	margin: 0px 10px;
+}
+.description03
+{ 
+	display: grid;
+	grid-area: description03; 
+	background-color: rgb(240, 232, 158);
+	margin-right: 10px;
+	padding: 50px;
+	font-size: 30px;
+	/* font-size: 20px; */
+
+}
+.slider03
+{
+	display: grid;
+	grid-area: image03;
+	width: 700px;
+	height: 525px;
+	background: url(../images/sagHouse/piper/Piper03-Medium.png);
+	animation: slide03 12.5s infinite;
+	background-color: lightslategray;
+	margin-left: 10px;
+}
+@keyframes slide03
+{
+	20% { background: url(../images/sagHouse/piper/Piper04-Medium.png); }
+	40% { background: url(../images/sagHouse/piper/Piper05-Medium.png); }
+	60% { background: url(../images/sagHouse/piper/Piper01-Medium.png); }
+	80% { background: url(../images/sagHouse/piper/Piper02-Medium.png); }
+	100% { background: url(../images/sagHouse/piper/Piper03-Medium.png); }
+}
+/* SlideShow03 */
+
+/* SlideShow04 */
+.slideShow04
+{
+	padding: 10px 0px;
+	display: grid;
+	grid-template-areas: 
+	'title04 title04'
+	'image04 description04';
+	grid-gap: 10px;
+	background-color: #414141; 
+	width: 1076px;
+	margin: 100px auto;
+	
+}
+.title04
+{ 
+	display: grid;
+	grid-area: title04; 
+	background-color: rgb(240, 133, 133);
+	margin: 0px 10px;
+}
+.description04
+{ 
+	display: grid;
+	grid-area: description04; 
+	background-color: rgb(240, 232, 158);
+	margin-right: 10px;
+	padding: 50px;
+	font-size: 30px;
+	/* font-size: 20px; */
+}
+.slider04
+{
+	display: grid;
+	grid-area: image04;
+	width: 700px;
+	height: 525px;
+	background: url(../images/sagHouse/waterBird/WaterBird04-Medium.png);
+	animation: slide04 12.5s infinite;
+	background-color: lightslategray;
+	margin-left: 10px;
+}
+@keyframes slide04
+{
+	20% { background: url(../images/sagHouse/waterBird/WaterBird05-Medium.png); }
+	40% { background: url(../images/sagHouse/waterBird/WaterBird01-Medium.png); }
+	60% { background: url(../images/sagHouse/waterBird/WaterBird02-Medium.png); }
+	80% { background: url(../images/sagHouse/waterBird/WaterBird03-Medium.png); }
+	100% { background: url(../images/sagHouse/waterBird/WaterBird04-Medium.png); }
+}
+/* SlideShow04 */
+/* Slider */
+
+/* Footer */
+.footer img
+{
+	margin: 0pc 5px 15px 5px;
+}
+.footer
+{
+	background-color: rgb(50,50,50);
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	padding: 60px 0px 70px 0px;
+	/* width: 100vw; */
+}
+/* Footer */
+
+@media(max-width: 630px) /* Navigation  */
+{
+.nav 
+{ 
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+}
+.nav-container
+{
+	display: block;
+	background-color: black;
+	height: 60px;
+	width: 500px;
+	margin: auto; 
+}
+a { text-decoration: none; color: white; }
+a:hover { text-decoration: none; color: grey; }
+ul > li
+{
+	list-style: none;
+	float: left;
+	width: 95px;
+	height: 50px;
+	background-color: black;
+	opacity: .8;
+	line-height: 40px;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 14px;
+	padding-top: 10px;
+}
+ul li ul li { display: none; }
+ul li:hover ul li { display: block; }
+}
