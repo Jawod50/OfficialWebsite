@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/chessLive.css">
 	<title>Official Website</title>
 </head>
-<body>
+<body onload="redirectPage()">
 	<div class="nav">
 		<div class="nav-container">
 			<ul>
@@ -31,18 +31,23 @@
 			</ul>
 		</div>
 	</div>
-	<br>
-	<div class="content">
-		<!-- <div class="photo01"></div> -->
-		<img src="../images/chessLive/ChessGame-Medium.png" alt="" class="photo01">
-		<div class="backgroundColor">
-			<h1 class="title">CHESS GAME</h1>
-			<p class="description">
-				Recreation of the famous chess game in your browser where you can play with your family and friends.
-			</p>
-		</div>
-
-	</div>
+	
+	<slide-show-manual
+			title="CHESS LIVE"
+			description="Recreation of the famous chess game in your browser where you can play with your family and friends with added feature of live video and chat."
+			numberOfSlides="6"
+			slideWidth="1000"
+			slideHeight="515"
+			bgColor="65"
+			slide01="../images/chessLive/ChessLive01.png"
+			slide02="../images/chessLive/ChessLive02.png"
+			slide03="../images/chessLive/ChessLive03.png"
+			slide04="../images/chessLive/ChessLive04.png"
+			slide05="../images/chessLive/ChessLive05.png"
+			slide06="../images/chessLive/ChessLive06.png"
+			nextIcon="../images/logos/next.png"
+			previousIcon="../images/logos/previous.png"
+	></slide-show-manual>
 
 	<div class="footer">
 		<a href="https://www.facebook.com/" target="new"><img src="../images/logos/SM_Facebook.png" alt="Facebook"></a>
@@ -51,5 +56,11 @@
 		<a href="https://linkedin.com/" target="new"><img src="../images/logos/SM_Linkedin.png" alt="Linkedin"></a>
 		<p>Copyright © 2019-2020 Jude Russel Jawod</p>
 	</div>
+	<script src="../scripts/slideShowManual.js"></script>
+	<script>
+		function redirectPage(){
+			window.open('https://chesslive.herokuapp.com', '_chessBrowser');
+		}
+	</script>
 </body>
 </html>
