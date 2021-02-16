@@ -226,22 +226,27 @@ ul li:hover ul li { display: block; }
 #gallery
 {
 	display: grid;
+	gap: 6vw 2vw;
 	grid-template-areas: 
 	'empty-00 photo-01 photo-01 photo-02 photo-02 photo-03 photo-03 empty-01'
 	'empty-00 photo-04 photo-04 photo-05 photo-05 photo-06 photo-06 empty-01'
-	'empty-00 photo-07 photo-07 photo-08 photo-08 photo-09 photo-09 empty-01';
+	'empty-00 photo-07 photo-07 photo-08 photo-08 photo-09 photo-09 empty-01'
+	'empty-00 photo-10 photo-10 photo-11 photo-11 photo-12 photo-12 empty-01'
+	'empty-00 photo-13 photo-13 photo-14 photo-14 photo-15 photo-15 empty-01';
 }
 
 #gallery img
 {
 	height: 100%;
 	width: 100%;
+	transition: 0.5s;
 }
+
 #gallery img:hover
 {
-	filter: grayscale(90%);
+	filter: grayscale(20%);
 	transform: scale(1.1);
-	transition: 1s;
+	transition: 0.5s;
 }
 #gallery .photo-01 { grid-area: photo-01; }
 #gallery .photo-02 { grid-area: photo-02; }
@@ -252,6 +257,16 @@ ul li:hover ul li { display: block; }
 #gallery .photo-07 { grid-area: photo-07; }
 #gallery .photo-08 { grid-area: photo-08; }
 #gallery .photo-09 { grid-area: photo-09; }
+#gallery .photo-10 { grid-area: photo-10; }
+#gallery .photo-11 { grid-area: photo-11; }
+#gallery .photo-12 { grid-area: photo-12; }
+#gallery .photo-13 { grid-area: photo-13; }
+#gallery .photo-14 { grid-area: photo-14; }
+#gallery .photo-15 { grid-area: photo-15; }
+
+
+
+
 .works
 {
 	padding: 60px 0px 100px 0px;
@@ -544,7 +559,11 @@ ul li:hover ul li { display: block; }
 		'empty-00 photo-03 photo-03 photo-03 photo-04 photo-04 photo-04 empty-01'
 		'empty-00 photo-05 photo-05 photo-05 photo-06 photo-06 photo-06 empty-01'
 		'empty-00 photo-07 photo-07 photo-07 photo-08 photo-08 photo-08 empty-01'
-		'empty-00 photo-09 photo-09 photo-09 empty-02 empty-02 empty-02 empty-01';
+		'empty-00 photo-09 photo-09 photo-09 photo-10 photo-10 photo-10 empty-01'
+		'empty-00 photo-11 photo-11 photo-11 photo-12 photo-12 photo-12 empty-01'
+		'empty-00 photo-13 photo-13 photo-13 photo-14 photo-14 photo-14 empty-01'
+		'empty-00 photo-15 photo-15 photo-15 empty-02 empty-02 empty-02 empty-01'
+		;
 	}
 }
 
@@ -562,7 +581,15 @@ ul li:hover ul li { display: block; }
 		'empty-00 photo-06 photo-06 photo-06 photo-06 photo-06 photo-06 empty-01'
 		'empty-00 photo-07 photo-07 photo-07 photo-07 photo-07 photo-07 empty-01'
 		'empty-00 photo-08 photo-08 photo-08 photo-08 photo-08 photo-08 empty-01'
-		'empty-00 photo-09 photo-09 photo-09 photo-09 photo-09 photo-09 empty-01';
+		'empty-00 photo-09 photo-09 photo-09 photo-09 photo-09 photo-09 empty-01'
+		'empty-00 photo-10 photo-10 photo-10 photo-10 photo-10 photo-10 empty-01'
+		'empty-00 photo-11 photo-11 photo-11 photo-11 photo-11 photo-11 empty-01'
+		'empty-00 photo-12 photo-12 photo-12 photo-12 photo-12 photo-12 empty-01'
+		'empty-00 photo-13 photo-13 photo-13 photo-13 photo-13 photo-13 empty-01'
+		'empty-00 photo-14 photo-14 photo-14 photo-14 photo-14 photo-14 empty-01'
+		'empty-00 photo-15 photo-15 photo-15 photo-15 photo-15 photo-15 empty-01'
+		;
+
 		row-gap: 5px;
 	}
 }
