@@ -274,28 +274,50 @@ class SlideShowManual extends HTMLElement {
 
 	connectedCallback() {
 		const numberOfSlides = parseInt(this.getAttribute("numberOfSlides"));
-		if (numberOfSlides >= 1) this.shadowRoot.querySelector(".slider-bar1").addEventListener("click", () => this.ChangeSlide(1));
-		if (numberOfSlides >= 2) this.shadowRoot.querySelector(".slider-bar2").addEventListener("click", () => this.ChangeSlide(2));
-		if (numberOfSlides >= 3) this.shadowRoot.querySelector(".slider-bar3").addEventListener("click", () => this.ChangeSlide(3));
-		if (numberOfSlides >= 4) this.shadowRoot.querySelector(".slider-bar4").addEventListener("click", () => this.ChangeSlide(4));
-		if (numberOfSlides >= 5) this.shadowRoot.querySelector(".slider-bar5").addEventListener("click", () => this.ChangeSlide(5));
-		if (numberOfSlides >= 6) this.shadowRoot.querySelector(".slider-bar6").addEventListener("click", () => this.ChangeSlide(6));
-		if (numberOfSlides >= 7) this.shadowRoot.querySelector(".slider-bar7").addEventListener("click", () => this.ChangeSlide(7));
-		if (numberOfSlides >= 8) this.shadowRoot.querySelector(".slider-bar8").addEventListener("click", () => this.ChangeSlide(8));
-		if (numberOfSlides >= 9) this.shadowRoot.querySelector(".slider-bar9").addEventListener("click", () => this.ChangeSlide(9));
-		if (numberOfSlides >= 10) this.shadowRoot.querySelector(".slider-bar10").addEventListener("click", () => this.ChangeSlide(10));
-		if (numberOfSlides >= 11) this.shadowRoot.querySelector(".slider-bar11").addEventListener("click", () => this.ChangeSlide(11));
-		if (numberOfSlides >= 12) this.shadowRoot.querySelector(".slider-bar12").addEventListener("click", () => this.ChangeSlide(12));
-		if (numberOfSlides >= 13) this.shadowRoot.querySelector(".slider-bar13").addEventListener("click", () => this.ChangeSlide(13));
-		if (numberOfSlides >= 14) this.shadowRoot.querySelector(".slider-bar14").addEventListener("click", () => this.ChangeSlide(14));
-		if (numberOfSlides >= 15) this.shadowRoot.querySelector(".slider-bar15").addEventListener("click", () => this.ChangeSlide(15));
-		if (numberOfSlides >= 16) this.shadowRoot.querySelector(".slider-bar16").addEventListener("click", () => this.ChangeSlide(16));
-		if (numberOfSlides >= 17) this.shadowRoot.querySelector(".slider-bar17").addEventListener("click", () => this.ChangeSlide(17));
-		if (numberOfSlides >= 18) this.shadowRoot.querySelector(".slider-bar18").addEventListener("click", () => this.ChangeSlide(18));
-		if (numberOfSlides >= 19) this.shadowRoot.querySelector(".slider-bar19").addEventListener("click", () => this.ChangeSlide(19));
-		if (numberOfSlides >= 20) this.shadowRoot.querySelector(".slider-bar20").addEventListener("click", () => this.ChangeSlide(20));
+		if (numberOfSlides >= 1)
+			this.shadowRoot.querySelector(".slider-bar1").addEventListener("click", () => this.ChangeSlide(1));
+		if (numberOfSlides >= 2)
+			this.shadowRoot.querySelector(".slider-bar2").addEventListener("click", () => this.ChangeSlide(2));
+		if (numberOfSlides >= 3)
+			this.shadowRoot.querySelector(".slider-bar3").addEventListener("click", () => this.ChangeSlide(3));
+		if (numberOfSlides >= 4)
+			this.shadowRoot.querySelector(".slider-bar4").addEventListener("click", () => this.ChangeSlide(4));
+		if (numberOfSlides >= 5)
+			this.shadowRoot.querySelector(".slider-bar5").addEventListener("click", () => this.ChangeSlide(5));
+		if (numberOfSlides >= 6)
+			this.shadowRoot.querySelector(".slider-bar6").addEventListener("click", () => this.ChangeSlide(6));
+		if (numberOfSlides >= 7)
+			this.shadowRoot.querySelector(".slider-bar7").addEventListener("click", () => this.ChangeSlide(7));
+		if (numberOfSlides >= 8)
+			this.shadowRoot.querySelector(".slider-bar8").addEventListener("click", () => this.ChangeSlide(8));
+		if (numberOfSlides >= 9)
+			this.shadowRoot.querySelector(".slider-bar9").addEventListener("click", () => this.ChangeSlide(9));
+		if (numberOfSlides >= 10)
+			this.shadowRoot.querySelector(".slider-bar10").addEventListener("click", () => this.ChangeSlide(10));
+		if (numberOfSlides >= 11)
+			this.shadowRoot.querySelector(".slider-bar11").addEventListener("click", () => this.ChangeSlide(11));
+		if (numberOfSlides >= 12)
+			this.shadowRoot.querySelector(".slider-bar12").addEventListener("click", () => this.ChangeSlide(12));
+		if (numberOfSlides >= 13)
+			this.shadowRoot.querySelector(".slider-bar13").addEventListener("click", () => this.ChangeSlide(13));
+		if (numberOfSlides >= 14)
+			this.shadowRoot.querySelector(".slider-bar14").addEventListener("click", () => this.ChangeSlide(14));
+		if (numberOfSlides >= 15)
+			this.shadowRoot.querySelector(".slider-bar15").addEventListener("click", () => this.ChangeSlide(15));
+		if (numberOfSlides >= 16)
+			this.shadowRoot.querySelector(".slider-bar16").addEventListener("click", () => this.ChangeSlide(16));
+		if (numberOfSlides >= 17)
+			this.shadowRoot.querySelector(".slider-bar17").addEventListener("click", () => this.ChangeSlide(17));
+		if (numberOfSlides >= 18)
+			this.shadowRoot.querySelector(".slider-bar18").addEventListener("click", () => this.ChangeSlide(18));
+		if (numberOfSlides >= 19)
+			this.shadowRoot.querySelector(".slider-bar19").addEventListener("click", () => this.ChangeSlide(19));
+		if (numberOfSlides >= 20)
+			this.shadowRoot.querySelector(".slider-bar20").addEventListener("click", () => this.ChangeSlide(20));
 		this.shadowRoot.querySelector(".next-container").addEventListener("click", () => this.ChangeSlide(this.currentSlide + 1));
-		this.shadowRoot.querySelector(".previous-container").addEventListener("click", () => this.ChangeSlide(this.currentSlide - 1));
+		this.shadowRoot
+			.querySelector(".previous-container")
+			.addEventListener("click", () => this.ChangeSlide(this.currentSlide - 1));
 	}
 
 	disconnectedCallback() {

@@ -1,96 +1,93 @@
-*
-{
+* {
 	margin: 0px;
 	padding: 0px;
 }
-body
-{
+body {
 	background: url(../images/logos/GameDev-Small.png);
 	overflow-x: hidden;
 }
 /* Navigation */
-.nav 
-{ 
+.nav {
 	position: fixed;
 	width: 100%;
-	background-color: black; 
+	background-color: black;
 	z-index: 3;
 }
-.nav-container
-{
+.nav-container {
 	display: block;
 	background-color: black;
 	height: 60px;
 	width: 625px;
-	margin: auto; 
+	margin: auto;
 }
-a { text-decoration: none; color: white; }
-a:hover { text-decoration: none; color: grey; }
-ul > li
-{
+a {
+	text-decoration: none;
+	color: white;
+}
+a:hover {
+	text-decoration: none;
+	color: grey;
+}
+ul > li {
 	list-style: none;
 	float: left;
 	width: 125px;
 	height: 50px;
 	background-color: black;
-	opacity: .8;
+	opacity: 0.8;
 	line-height: 40px;
 	text-align: center;
 	font-family: sans-serif;
 	font-size: 14px;
 	padding-top: 10px;
 }
-ul li ul li { display: none; }
-ul li:hover ul li { display: block; }
+ul li ul li {
+	display: none;
+}
+ul li:hover ul li {
+	display: block;
+}
 /* Navigation */
 
 /* Slider */
-.content h1
-{
+.content h1 {
 	text-align: center;
 	font-size: 75px;
 }
-.content p
-{ 
+.content p {
 	text-align: justify;
 	font-family: sans-serif;
-
 }
 
 /* SlideShow01 */
-.slideShow01
-{
+.slideShow01 {
 	padding: 10px 0px;
 	display: grid;
-	grid-template-areas: 
-	'title01 title01'
-	'image01 description01';
+	grid-template-areas:
+		"title01 title01"
+		"image01 description01";
 	grid-gap: 10px;
-	background-color: #414141; 
+	background-color: #414141;
 	width: 1076px;
 	margin: 54px auto auto auto;
 	font-size: 2px;
-	
 }
-.title01
-{ 
+.title01 {
 	display: grid;
-	grid-area: title01; 
+	grid-area: title01;
 	background-color: rgb(240, 133, 133);
 	margin: 0px 10px;
 }
-.description01
-{ 
+.description01 {
 	display: grid;
-	grid-area: description01; 
+	grid-area: description01;
 	background-color: rgb(240, 232, 158);
 	margin-right: 10px;
 	padding: 50px;
 	font-size: 23px;
 	/* font-size: 16px; */
 }
-.slider01
-{
+.slider01 {
 	display: grid;
 	grid-area: image01;
 	width: 700px;
@@ -99,110 +96,126 @@ ul li:hover ul li { display: block; }
 	animation: slide01 12.5s infinite;
 	background-color: lightslategray;
 	margin-left: 10px;
-	
 }
-@keyframes slide01
-{
-	20% { background: url(../images/bananaCube/bananaCube/BananaCube02-Medium.png); }
-	40% { background: url(../images/bananaCube/bananaCube/BananaCube03-Medium.png); }
-	60% { background: url(../images/bananaCube/bananaCube/BananaCube04-Medium.png); }
-	80% { background: url(../images/bananaCube/bananaCube/BananaCube05-Medium.png); }
-	100% { background: url(../images/bananaCube/bananaCube/BananaCube01-Medium.png); }
+@keyframes slide01 {
+	20% {
+		background: url(../images/bananaCube/bananaCube/BananaCube02-Medium.png);
+	}
+	40% {
+		background: url(../images/bananaCube/bananaCube/BananaCube03-Medium.png);
+	}
+	60% {
+		background: url(../images/bananaCube/bananaCube/BananaCube04-Medium.png);
+	}
+	80% {
+		background: url(../images/bananaCube/bananaCube/BananaCube05-Medium.png);
+	}
+	100% {
+		background: url(../images/bananaCube/bananaCube/BananaCube01-Medium.png);
+	}
 }
 /* SlideShow01 */
 
 /* SlideShow02 */
-.slideShow02
-{
+.slideShow02 {
 	padding: 10px 0px;
 	display: grid;
-	grid-template-areas: 
-	'title02 title02'
-	'image02 description02';
+	grid-template-areas:
+		"title02 title02"
+		"image02 description02";
 	grid-gap: 10px;
-	background-color: #414141; 
+	background-color: #414141;
 	width: 1076px;
 	margin: 100px auto auto auto;
-	
 }
-.title02
-{ 
+.title02 {
 	display: grid;
-	grid-area: title02; 
+	grid-area: title02;
 	background-color: rgb(240, 133, 133);
 	margin: 0px 10px;
 }
-.description02
-{ 
+.description02 {
 	display: grid;
-	grid-area: description02; 
+	grid-area: description02;
 	background-color: rgb(240, 232, 158);
 	margin-right: 10px;
 	padding: 50px;
 	font-size: 28px;
 	/* font-size: 16px; */
-
 }
 
-.slider02
-{
+.slider02 {
 	display: grid;
 	grid-area: image02;
 	width: 700px;
 	height: 560px;
 	background: url(../images/bananaCube/bananaHunt/BananaHunt01-Medium.png);
 	animation: slide02 25s infinite;
-	background-color: #414141; 
+	background-color: #414141;
 	margin-left: 10px;
 }
-@keyframes slide02
-{
-	10% { background: url(../images/bananaCube/bananaHunt/BananaHunt02-Medium.png); }
-	20% { background: url(../images/bananaCube/bananaHunt/BananaHunt03-Medium.png); }
-	30% { background: url(../images/bananaCube/bananaHunt/BananaHunt04-Medium.png); }
-	40% { background: url(../images/bananaCube/bananaHunt/BananaHunt05-Medium.png); }
-	50% { background: url(../images/bananaCube/bananaHunt/BananaHunt06-Medium.png); }
-	60% { background: url(../images/bananaCube/bananaHunt/BananaHunt07-Medium.png); }
-	70% { background: url(../images/bananaCube/bananaHunt/BananaHunt08-Medium.png); }
-	80% { background: url(../images/bananaCube/bananaHunt/BananaHunt09-Medium.png); }
-	90% { background: url(../images/bananaCube/bananaHunt/BananaHunt10-Medium.png); }
-	100% { background: url(../images/bananaCube/bananaHunt/BananaHunt01-Medium.png); }
+@keyframes slide02 {
+	10% {
+		background: url(../images/bananaCube/bananaHunt/BananaHunt02-Medium.png);
+	}
+	20% {
+		background: url(../images/bananaCube/bananaHunt/BananaHunt03-Medium.png);
+	}
+	30% {
+		background: url(../images/bananaCube/bananaHunt/BananaHunt04-Medium.png);
+	}
+	40% {
+		background: url(../images/bananaCube/bananaHunt/BananaHunt05-Medium.png);
+	}
+	50% {
+		background: url(../images/bananaCube/bananaHunt/BananaHunt06-Medium.png);
+	}
+	60% {
+		background: url(../images/bananaCube/bananaHunt/BananaHunt07-Medium.png);
+	}
+	70% {
+		background: url(../images/bananaCube/bananaHunt/BananaHunt08-Medium.png);
+	}
+	80% {
+		background: url(../images/bananaCube/bananaHunt/BananaHunt09-Medium.png);
+	}
+	90% {
+		background: url(../images/bananaCube/bananaHunt/BananaHunt10-Medium.png);
+	}
+	100% {
+		background: url(../images/bananaCube/bananaHunt/BananaHunt01-Medium.png);
+	}
 }
 /* SlideShow02 */
 
 /* SlideShow03 */
-.slideShow03
-{
+.slideShow03 {
 	padding: 10px 0px;
 	display: grid;
-	grid-template-areas: 
-	'title03 title03'
-	'image03 description03';
+	grid-template-areas:
+		"title03 title03"
+		"image03 description03";
 	grid-gap: 10px;
-	background-color: #414141; 
+	background-color: #414141;
 	width: 1076px;
 	margin: 100px auto auto auto;
-	
 }
-.title03
-{ 
+.title03 {
 	display: grid;
-	grid-area: title03; 
+	grid-area: title03;
 	background-color: rgb(240, 133, 133);
 	margin: 0px 10px;
 }
-.description03
-{ 
+.description03 {
 	display: grid;
-	grid-area: description03; 
+	grid-area: description03;
 	background-color: rgb(240, 232, 158);
 	margin-right: 10px;
 	padding: 50px;
 	font-size: 30px;
 	/* font-size: 16px; */
 }
-.slider03
-{
+.slider03 {
 	display: grid;
 	grid-area: image03;
 	width: 700px;
@@ -212,42 +225,46 @@ ul li:hover ul li { display: block; }
 	background-color: lightslategray;
 	margin-left: 10px;
 }
-@keyframes slide03
-{
-	20% { background: url(../images/bananaCube/bananaHuntPro/BananaHuntPro02-Medium.png); }
-	40% { background: url(../images/bananaCube/bananaHuntPro/BananaHuntPro03-Medium.png); }
-	60% { background: url(../images/bananaCube/bananaHuntPro/BananaHuntPro04-Medium.png); }
-	80% { background: url(../images/bananaCube/bananaHuntPro/BananaHuntPro05-Medium.png); }
-	100% { background: url(../images/bananaCube/bananaHuntPro/BananaHuntPro01-Medium.png); }
+@keyframes slide03 {
+	20% {
+		background: url(../images/bananaCube/bananaHuntPro/BananaHuntPro02-Medium.png);
+	}
+	40% {
+		background: url(../images/bananaCube/bananaHuntPro/BananaHuntPro03-Medium.png);
+	}
+	60% {
+		background: url(../images/bananaCube/bananaHuntPro/BananaHuntPro04-Medium.png);
+	}
+	80% {
+		background: url(../images/bananaCube/bananaHuntPro/BananaHuntPro05-Medium.png);
+	}
+	100% {
+		background: url(../images/bananaCube/bananaHuntPro/BananaHuntPro01-Medium.png);
+	}
 }
 /* SlideShow03 */
 
-
 /* SlideShow04 */
-.slideShow04
-{
+.slideShow04 {
 	padding: 10px 0px;
 	display: grid;
-	grid-template-areas: 
-	'title04 title04'
-	'image04 description04';
+	grid-template-areas:
+		"title04 title04"
+		"image04 description04";
 	grid-gap: 10px;
-	background-color: #414141; 
+	background-color: #414141;
 	width: 1076px;
 	margin: 100px auto;
-	
 }
-.title04
-{ 
+.title04 {
 	display: grid;
-	grid-area: title04; 
+	grid-area: title04;
 	background-color: rgb(240, 133, 133);
 	margin: 0px 10px;
 }
-.description04
-{ 
+.description04 {
 	display: grid;
-	grid-area: description04; 
+	grid-area: description04;
 	background-color: rgb(240, 232, 158);
 	margin-right: 10px;
 	padding: 50px;
@@ -255,8 +272,7 @@ ul li:hover ul li { display: block; }
 	/* font-size: 16px; */
 }
 
-.slider04
-{
+.slider04 {
 	display: grid;
 	grid-area: image04;
 	width: 700px;
@@ -266,27 +282,32 @@ ul li:hover ul li { display: block; }
 	background-color: lightslategray;
 	margin-left: 10px;
 }
-@keyframes slide04
-{
-	20% { background: url(../images/bananaCube/bananaRun/BananaRun02-Medium.png); }
-	40% { background: url(../images/bananaCube/bananaRun/BananaRun03-Medium.png); }
-	60% { background: url(../images/bananaCube/bananaRun/BananaRun04-Medium.png); }
-	80% { background: url(../images/bananaCube/bananaRun/BananaRun05-Medium.png); }
-	100% { background: url(../images/bananaCube/bananaRun/BananaRun01-Medium.png); }
+@keyframes slide04 {
+	20% {
+		background: url(../images/bananaCube/bananaRun/BananaRun02-Medium.png);
+	}
+	40% {
+		background: url(../images/bananaCube/bananaRun/BananaRun03-Medium.png);
+	}
+	60% {
+		background: url(../images/bananaCube/bananaRun/BananaRun04-Medium.png);
+	}
+	80% {
+		background: url(../images/bananaCube/bananaRun/BananaRun05-Medium.png);
+	}
+	100% {
+		background: url(../images/bananaCube/bananaRun/BananaRun01-Medium.png);
+	}
 }
 /* SlideShow04 */
 /* Slider */
 
-
-
 /* Footer */
-.footer img
-{
+.footer img {
 	margin: 0pc 5px 15px 5px;
 }
-.footer
-{
-	background-color: rgb(50,50,50);
+.footer {
+	background-color: rgb(50, 50, 50);
 	color: white;
 	font-size: 14px;
 	text-align: center;
@@ -295,38 +316,44 @@ ul li:hover ul li { display: block; }
 }
 /* Footer */
 
-@media(max-width: 630px) /* Navigation  */
-{
-.nav 
-{ 
-	position: fixed;
-	width: 100%;
-	z-index: 3;
-}
-.nav-container
-{
-	display: block;
-	background-color: black;
-	height: 60px;
-	width: 500px;
-	margin: auto; 
-}
-a { text-decoration: none; color: white; }
-a:hover { text-decoration: none; color: grey; }
-ul > li
-{
-	list-style: none;
-	float: left;
-	width: 95px;
-	height: 50px;
-	background-color: black;
-	opacity: .8;
-	line-height: 40px;
-	text-align: center;
-	font-family: sans-serif;
-	font-size: 14px;
-	padding-top: 10px;
-}
-ul li ul li { display: none; }
-ul li:hover ul li { display: block; }
+@media (max-width: 630px) /* Navigation */ {
+	.nav {
+		position: fixed;
+		width: 100%;
+		z-index: 3;
+	}
+	.nav-container {
+		display: block;
+		background-color: black;
+		height: 60px;
+		width: 500px;
+		margin: auto;
+	}
+	a {
+		text-decoration: none;
+		color: white;
+	}
+	a:hover {
+		text-decoration: none;
+		color: grey;
+	}
+	ul > li {
+		list-style: none;
+		float: left;
+		width: 95px;
+		height: 50px;
+		background-color: black;
+		opacity: 0.8;
+		line-height: 40px;
+		text-align: center;
+		font-family: sans-serif;
+		font-size: 14px;
+		padding-top: 10px;
+	}
+	ul li ul li {
+		display: none;
+	}
+	ul li:hover ul li {
+		display: block;
+	}
 }
