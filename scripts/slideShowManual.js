@@ -164,6 +164,16 @@ template.innerHTML = `
         <div class="slide"> <img class="slide8" alt="slide8"/> </div>
         <div class="slide"> <img class="slide9" alt="slide9"/> </div>
         <div class="slide"> <img class="slide10" alt="slide10"/> </div>
+        <div class="slide"> <img class="slide11" alt="slide11"/> </div>
+        <div class="slide"> <img class="slide12" alt="slide12"/> </div>
+        <div class="slide"> <img class="slide13" alt="slide13"/> </div>
+        <div class="slide"> <img class="slide14" alt="slide14"/> </div>
+        <div class="slide"> <img class="slide15" alt="slide15"/> </div>
+        <div class="slide"> <img class="slide16" alt="slide16"/> </div>
+        <div class="slide"> <img class="slide17" alt="slide17"/> </div>
+        <div class="slide"> <img class="slide18" alt="slide18"/> </div>
+        <div class="slide"> <img class="slide19" alt="slide19"/> </div>
+        <div class="slide"> <img class="slide20" alt="slide20"/> </div>
       </div>
     </div>
     
@@ -178,6 +188,16 @@ template.innerHTML = `
       <label class="slider-bar slider-bar8"></label>
       <label class="slider-bar slider-bar9"></label>
       <label class="slider-bar slider-bar10"></label>
+      <label class="slider-bar slider-bar11"></label>
+      <label class="slider-bar slider-bar12"></label>
+      <label class="slider-bar slider-bar13"></label>
+      <label class="slider-bar slider-bar14"></label>
+      <label class="slider-bar slider-bar15"></label>
+      <label class="slider-bar slider-bar16"></label>
+      <label class="slider-bar slider-bar17"></label>
+      <label class="slider-bar slider-bar18"></label>
+      <label class="slider-bar slider-bar19"></label>
+      <label class="slider-bar slider-bar20"></label>
     </div>
   
     <div class="detail-container">
@@ -215,9 +235,19 @@ class SlideShowManual extends HTMLElement {
 		if (numberOfSlides >= 8) this.shadowRoot.querySelector(".slide8").src = this.getAttribute("slide08");
 		if (numberOfSlides >= 9) this.shadowRoot.querySelector(".slide9").src = this.getAttribute("slide09");
 		if (numberOfSlides >= 10) this.shadowRoot.querySelector(".slide10").src = this.getAttribute("slide10");
+		if (numberOfSlides >= 11) this.shadowRoot.querySelector(".slide11").src = this.getAttribute("slide11");
+		if (numberOfSlides >= 12) this.shadowRoot.querySelector(".slide12").src = this.getAttribute("slide12");
+		if (numberOfSlides >= 13) this.shadowRoot.querySelector(".slide13").src = this.getAttribute("slide13");
+		if (numberOfSlides >= 14) this.shadowRoot.querySelector(".slide14").src = this.getAttribute("slide14");
+		if (numberOfSlides >= 15) this.shadowRoot.querySelector(".slide15").src = this.getAttribute("slide15");
+		if (numberOfSlides >= 16) this.shadowRoot.querySelector(".slide16").src = this.getAttribute("slide16");
+		if (numberOfSlides >= 17) this.shadowRoot.querySelector(".slide17").src = this.getAttribute("slide17");
+		if (numberOfSlides >= 18) this.shadowRoot.querySelector(".slide18").src = this.getAttribute("slide18");
+		if (numberOfSlides >= 19) this.shadowRoot.querySelector(".slide19").src = this.getAttribute("slide19");
+		if (numberOfSlides >= 20) this.shadowRoot.querySelector(".slide20").src = this.getAttribute("slide20");
 
-		for (let i = 10; i > numberOfSlides; i--) this.shadowRoot.querySelector(`.slide${i}`).remove(); // Removing excess slide image
-		for (let i = 10; i > numberOfSlides; i--) this.shadowRoot.querySelector(`.slider-bar${i}`).remove(); // Removing excess slider button
+		for (let i = 20; i > numberOfSlides; i--) this.shadowRoot.querySelector(`.slide${i}`).remove(); // Removing excess slide image
+		for (let i = 20; i > numberOfSlides; i--) this.shadowRoot.querySelector(`.slider-bar${i}`).remove(); // Removing excess slider button
 
 		// Styling
 		const contentContainer = this.shadowRoot.querySelector(".content-container").style;
@@ -253,8 +283,17 @@ class SlideShowManual extends HTMLElement {
 		if (numberOfSlides >= 7) this.shadowRoot.querySelector(".slider-bar7").addEventListener("click", () => this.ChangeSlide(7));
 		if (numberOfSlides >= 8) this.shadowRoot.querySelector(".slider-bar8").addEventListener("click", () => this.ChangeSlide(8));
 		if (numberOfSlides >= 9) this.shadowRoot.querySelector(".slider-bar9").addEventListener("click", () => this.ChangeSlide(9));
-		if (numberOfSlides >= 10)
-			this.shadowRoot.querySelector(".slider-bar10").addEventListener("click", () => this.ChangeSlide(10));
+		if (numberOfSlides >= 10) this.shadowRoot.querySelector(".slider-bar10").addEventListener("click", () => this.ChangeSlide(10));
+		if (numberOfSlides >= 11) this.shadowRoot.querySelector(".slider-bar11").addEventListener("click", () => this.ChangeSlide(11));
+		if (numberOfSlides >= 12) this.shadowRoot.querySelector(".slider-bar12").addEventListener("click", () => this.ChangeSlide(12));
+		if (numberOfSlides >= 13) this.shadowRoot.querySelector(".slider-bar13").addEventListener("click", () => this.ChangeSlide(13));
+		if (numberOfSlides >= 14) this.shadowRoot.querySelector(".slider-bar14").addEventListener("click", () => this.ChangeSlide(14));
+		if (numberOfSlides >= 15) this.shadowRoot.querySelector(".slider-bar15").addEventListener("click", () => this.ChangeSlide(15));
+		if (numberOfSlides >= 16) this.shadowRoot.querySelector(".slider-bar16").addEventListener("click", () => this.ChangeSlide(16));
+		if (numberOfSlides >= 17) this.shadowRoot.querySelector(".slider-bar17").addEventListener("click", () => this.ChangeSlide(17));
+		if (numberOfSlides >= 18) this.shadowRoot.querySelector(".slider-bar18").addEventListener("click", () => this.ChangeSlide(18));
+		if (numberOfSlides >= 19) this.shadowRoot.querySelector(".slider-bar19").addEventListener("click", () => this.ChangeSlide(19));
+		if (numberOfSlides >= 20) this.shadowRoot.querySelector(".slider-bar20").addEventListener("click", () => this.ChangeSlide(20));
 		this.shadowRoot.querySelector(".next-container").addEventListener("click", () => this.ChangeSlide(this.currentSlide + 1));
 		this.shadowRoot.querySelector(".previous-container").addEventListener("click", () => this.ChangeSlide(this.currentSlide - 1));
 	}
@@ -271,6 +310,16 @@ class SlideShowManual extends HTMLElement {
 		if (numberOfSlides >= 8) this.shadowRoot.querySelector(".slider-bar8").removeEventListener();
 		if (numberOfSlides >= 9) this.shadowRoot.querySelector(".slider-bar9").removeEventListener();
 		if (numberOfSlides >= 10) this.shadowRoot.querySelector(".slider-bar10").removeEventListener();
+		if (numberOfSlides >= 11) this.shadowRoot.querySelector(".slider-bar11").removeEventListener();
+		if (numberOfSlides >= 12) this.shadowRoot.querySelector(".slider-bar12").removeEventListener();
+		if (numberOfSlides >= 13) this.shadowRoot.querySelector(".slider-bar13").removeEventListener();
+		if (numberOfSlides >= 14) this.shadowRoot.querySelector(".slider-bar14").removeEventListener();
+		if (numberOfSlides >= 15) this.shadowRoot.querySelector(".slider-bar15").removeEventListener();
+		if (numberOfSlides >= 16) this.shadowRoot.querySelector(".slider-bar16").removeEventListener();
+		if (numberOfSlides >= 17) this.shadowRoot.querySelector(".slider-bar17").removeEventListener();
+		if (numberOfSlides >= 18) this.shadowRoot.querySelector(".slider-bar18").removeEventListener();
+		if (numberOfSlides >= 19) this.shadowRoot.querySelector(".slider-bar19").removeEventListener();
+		if (numberOfSlides >= 20) this.shadowRoot.querySelector(".slider-bar20").removeEventListener();
 		this.shadowRoot.querySelector(".next-container").removeEventListener();
 		this.shadowRoot.querySelector(".previous-container").removeEventListener();
 	}
