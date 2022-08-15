@@ -211,7 +211,8 @@ ul li:hover ul li {
 		"empty-00 photo-04 photo-04 photo-05 photo-05 photo-06 photo-06 empty-01"
 		"empty-00 photo-07 photo-07 photo-08 photo-08 photo-09 photo-09 empty-01"
 		"empty-00 photo-10 photo-10 photo-11 photo-11 photo-12 photo-12 empty-01"
-		"empty-00 photo-13 photo-13 photo-14 photo-14 photo-15 photo-15 empty-01";
+		"empty-00 photo-13 photo-13 photo-14 photo-14 photo-15 photo-15 empty-01"
+		"empty-00 photo-16 photo-16 photo-17 photo-17 photo-18 photo-18 empty-01";
 }
 
 #gallery img {
@@ -269,6 +270,15 @@ ul li:hover ul li {
 }
 #gallery .photo-15 {
 	grid-area: photo-15;
+}
+#gallery .photo-16 {
+	grid-area: photo-16;
+}
+#gallery .photo-17 {
+	grid-area: photo-17;
+}
+#gallery .photo-18 {
+	grid-area: photo-18;
 }
 
 .works {
@@ -545,7 +555,8 @@ textarea {
 			"empty-00 photo-09 photo-09 photo-09 photo-10 photo-10 photo-10 empty-01"
 			"empty-00 photo-11 photo-11 photo-11 photo-12 photo-12 photo-12 empty-01"
 			"empty-00 photo-13 photo-13 photo-13 photo-14 photo-14 photo-14 empty-01"
-			"empty-00 photo-15 photo-15 photo-15 empty-02 empty-02 empty-02 empty-01";
+			"empty-00 photo-15 photo-15 photo-15 photo-16 photo-16 photo-16 empty-01"
+			"empty-00 photo-17 photo-17 photo-17 photo-18 photo-18 photo-18 empty-01";
 	}
 }
 
@@ -567,7 +578,10 @@ textarea {
 			"empty-00 photo-12 photo-12 photo-12 photo-12 photo-12 photo-12 empty-01"
 			"empty-00 photo-13 photo-13 photo-13 photo-13 photo-13 photo-13 empty-01"
 			"empty-00 photo-14 photo-14 photo-14 photo-14 photo-14 photo-14 empty-01"
-			"empty-00 photo-15 photo-15 photo-15 photo-15 photo-15 photo-15 empty-01";
+			"empty-00 photo-15 photo-15 photo-15 photo-15 photo-15 photo-15 empty-01"
+			"empty-00 photo-16 photo-16 photo-16 photo-16 photo-16 photo-16 empty-01"
+			"empty-00 photo-17 photo-17 photo-17 photo-17 photo-17 photo-17 empty-01"
+			"empty-00 photo-18 photo-18 photo-18 photo-18 photo-18 photo-18 empty-01";
 
 		row-gap: 5px;
 	}
