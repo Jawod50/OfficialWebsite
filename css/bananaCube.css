@@ -1,5 +1,4 @@
-* {
-	margin: 0px;
+* {	margin: 0px;
 	padding: 0px;
 }
 body {
@@ -85,6 +84,7 @@ ul li:hover ul li {
 	margin-right: 10px;
 	padding: 50px;
 	font-size: 23px;
+	word-break: break-all;
 	/* font-size: 16px; */
 }
 .slider01 {
