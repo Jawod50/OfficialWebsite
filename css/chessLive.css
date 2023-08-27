@@ -133,3 +133,9 @@ ul li:hover ul li {
 		display: block;
 	}
 }
+
+@media (max-width: 450px) /* Navigation */ {
+	.nav-container {
+		width: 100vw;
+	}
+}
