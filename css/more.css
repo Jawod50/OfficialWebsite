@@ -144,3 +144,16 @@ ul li:hover ul li {
 		display: block;
 	}
 }
+@media (max-width: 630px) /* Navigation */ {
+	.WD-section {
+		margin: 150px 0%;
+		padding: 2px;
+	}
+	.WD-title {
+		margin-bottom: 2px;
+	}
+
+	.WD-body img {
+		margin: 10px 0px;
+	}
+}
