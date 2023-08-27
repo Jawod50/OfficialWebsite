@@ -1,4 +1,5 @@
-/* General */* {
+/* General */
+* {
 	margin: 0px;
 	padding: 0px;
 }
@@ -172,7 +173,7 @@ ul li:hover ul li {
 }
 .wrap-p {
 	/* width: 350px; */
-	padding: 0px 107px;
+	margin: 0px 107px;
 }
 #service-container h1 {
 	font-size: 40px;
