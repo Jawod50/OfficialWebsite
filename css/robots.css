@@ -93,6 +93,7 @@ ul li:hover ul li {
 	width: 700px;
 	height: 540px;
 }
+
 /* Robot01 */
 
 /* Robot02 */
@@ -124,7 +125,8 @@ ul li:hover ul li {
 	width: 700px;
 	height: 540px;
 }
-
+@media (max-width: 1150px) {
+}
 /* Robot02 */
 
 /* Robot03 */
@@ -249,5 +251,109 @@ ul li:hover ul li {
 @media (max-width: 450px) /* Navigation */ {
 	.nav-container {
 		width: 100vw;
+	}
+}
+
+@media (max-width: 1150px) {
+	.robot01 {
+		grid-template-areas:
+			"title01 title01"
+			"image01 image01"
+			"description01 description01";
+		width: 100%;
+	}
+	.photo01 {
+		display: grid;
+		grid-area: image01;
+		width: 100%;
+		object-fit: cover;
+		height: auto;
+	}
+
+	.robot02 {
+		grid-template-areas:
+			"title02 title02"
+			"image02 image02"
+			"description02 description02";
+		width: 100%;
+	}
+	.photo02 {
+		display: grid;
+		grid-area: image02;
+		width: 100%;
+		object-fit: cover;
+		height: auto;
+	}
+
+	.robot03 {
+		grid-template-areas:
+			"title03 title03"
+			"image03 image03"
+			"description03 description03";
+		width: 100%;
+	}
+	.photo03 {
+		display: grid;
+		grid-area: image03;
+		width: 100%;
+		object-fit: cover;
+		height: auto;
+	}
+
+	.robot04 {
+		grid-template-areas:
+			"title04 title04"
+			"image04 image04"
+			"description04 description04";
+		width: 100%;
+	}
+	.photo04 {
+		display: grid;
+		grid-area: image04;
+		width: 100%;
+		object-fit: cover;
+		height: auto;
+	}
+}
+
+@media (max-width: 750px) {
+	.robot01 {
+		width: 90%;
+		.title01 {
+			font-size: 50px;
+		}
+		.description01 {
+			padding: 25px;
+		}
+	}
+
+	.robot02 {
+		width: 90%;
+		.title02 {
+			font-size: 50px;
+		}
+		.description02 {
+			padding: 25px;
+		}
+	}
+
+	.robot03 {
+		width: 90%;
+		.title03 {
+			font-size: 50px;
+		}
+		.description03 {
+			padding: 25px;
+		}
+	}
+
+	.robot04 {
+		width: 90%;
+		.title04 {
+			font-size: 50px;
+		}
+		.description04 {
+			padding: 25px;
+		}
 	}
 }
