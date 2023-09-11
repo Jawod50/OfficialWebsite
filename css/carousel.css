@@ -1,5 +1,4 @@
-.no-select {
-	-webkit-touch-callout: none; /* iOS Safari */
+.no-select {	-webkit-touch-callout: none; /* iOS Safari */
 	-webkit-user-select: none; /* Safari */
 	-khtml-user-select: none; /* Konqueror HTML */
 	-moz-user-select: none; /* Old versions of Firefox */
@@ -161,7 +160,6 @@
 	}
 }
 
-/* Navigation */
 @media (max-width: 450px) {
 	.carousel-container {
 		margin-top: 200px;
