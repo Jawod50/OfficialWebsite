@@ -1,5 +1,4 @@
-/* Navigation */
-.nav {
+/* Navigation */.nav {
 	position: fixed;
 	width: 100%;
 	background-color: black;
@@ -52,7 +51,8 @@ ul li:hover ul li {
 		display: block;
 		background-color: black;
 		height: 60px;
-		width: 500px;
+		/* max-width: 410px; */
+		width: 100vw;
 		margin: auto;
 	}
 	a {
@@ -66,14 +66,15 @@ ul li:hover ul li {
 	ul > li {
 		list-style: none;
 		float: left;
-		width: 95px;
+		/* width: 95px; */
+		max-width: 19vw;
 		height: 50px;
 		background-color: black;
 		opacity: 0.8;
 		line-height: 40px;
 		text-align: center;
 		font-family: sans-serif;
-		font-size: 14px;
+		font-size: 12px;
 		padding-top: 10px;
 	}
 	ul li ul li {

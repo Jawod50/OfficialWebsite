@@ -1,5 +1,4 @@
-/* General */
-* {
+/* General */* {
 	margin: 0px;
 	padding: 0px;
 }
@@ -322,7 +321,6 @@ body {
 	width: 775px;
 	padding: 30px 0px 100px 0px;
 }
-
 .find-content h1 {
 	font-size: 40px;
 	font-weight: lighter;
@@ -340,7 +338,6 @@ body {
 	line-height: 35px;
 	opacity: 80%;
 }
-
 .find-grid-container {
 	display: grid;
 	grid-template-areas: "information sign-up";
@@ -365,7 +362,6 @@ textarea {
 	height: 150px;
 	margin: 2px;
 }
-
 .information {
 	display: grid;
 	grid-area: information;
@@ -377,7 +373,6 @@ textarea {
 	height: 308px;
 	padding: 0px 15px;
 }
-
 .sign-up {
 	grid-area: sign-up;
 	/* background-color: red; */
@@ -449,14 +444,21 @@ textarea {
 		padding: 20px 0px 50px 0px;
 	}
 }
-
 @media (max-width: 450px) /* Service */ {
 	#service {
-		width: 100vw;
+		width: 90vw;
 		overflow-x: hidden;
 		/* width: 550px; */
 		/* margin: 20px auto; */
 		padding: 100px 0px 20px 0px;
+	}
+
+	#service-container #service-item07 .wrap-p,
+	#service-container #service-item08 p,
+	#service-container #service-item09 p {
+		width: 90%;
+		margin: 10px;
+		/* font-size: 18px; */
 	}
 }
 @media (max-width: 930px) /* Heading */ {
@@ -517,7 +519,6 @@ textarea {
 			"empty-00 photo-17 photo-17 photo-17 photo-18 photo-18 photo-18 empty-01";
 	}
 }
-
 @media (max-width: 525px) /* Work */ {
 	#gallery {
 		display: grid;
@@ -549,9 +550,12 @@ textarea {
 @media (max-width: 950px) /* About */ {
 	.about-container {
 		background-color: white;
-		width: 80vw;
+		width: 90vw;
 		padding: 100px 0px;
 		margin: 0px auto;
+	}
+	.about-container p {
+		padding: 40px 40px 0px 40px;
 	}
 }
 @media (max-width: 950px) /* About */ {

@@ -1,4 +1,5 @@
-* {	margin: 0px;
+* {
+	margin: 0px;
 	padding: 0px;
 }
 body {
@@ -229,7 +230,7 @@ body {
 	.robot01 {
 		width: 90%;
 		.title01 {
-			font-size: 50px;
+			font-size: 40px;
 		}
 		.description01 {
 			padding: 25px;
@@ -239,7 +240,7 @@ body {
 	.robot02 {
 		width: 90%;
 		.title02 {
-			font-size: 50px;
+			font-size: 40px;
 		}
 		.description02 {
 			padding: 25px;
@@ -249,7 +250,7 @@ body {
 	.robot03 {
 		width: 90%;
 		.title03 {
-			font-size: 50px;
+			font-size: 40px;
 		}
 		.description03 {
 			padding: 25px;
@@ -259,7 +260,7 @@ body {
 	.robot04 {
 		width: 90%;
 		.title04 {
-			font-size: 50px;
+			font-size: 40px;
 		}
 		.description04 {
 			padding: 25px;
