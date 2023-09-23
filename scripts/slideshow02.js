@@ -1,9 +1,9 @@
 const images01 = [
-	"../images/bananaCube/bananaCube/bananaCube01-Medium.png",
-	"../images/bananaCube/bananaCube/bananaCube02-Medium.png",
-	"../images/bananaCube/bananaCube/bananaCube03-Medium.png",
-	"../images/bananaCube/bananaCube/bananaCube04-Medium.png",
-	"../images/bananaCube/bananaCube/bananaCube05-Medium.png",
+	"../images/bananaCube/bananaCube/BananaCube01-Medium.png",
+	"../images/bananaCube/bananaCube/BananaCube02-Medium.png",
+	"../images/bananaCube/bananaCube/BananaCube03-Medium.png",
+	"../images/bananaCube/bananaCube/BananaCube04-Medium.png",
+	"../images/bananaCube/bananaCube/BananaCube05-Medium.png",
 ];
 const images02 = [
 	"../images/bananaCube/bananaHunt/BananaHunt01-Medium.png",
